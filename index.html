@@ -1,22 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Netflix Pakistan</title>
-    <link rel="stylesheet" href="main.css"/>
+    <title>Home | Netflix Clone</title>
+    <link rel="stylesheet" href="main.css" />
     <script src="app.js"></script>
   </head>
   <body>
     <!-- navbar -->
     <div class="nav">
       <div class="nav__left">
-        <img class="nav_logo" src="logo.svg" alt="">
+        <img class="nav_logo" src="/assets/logo.svg" alt="" />
       </div>
       <div class="nav__right">
-        <img src="avatar.png" class="nav_avatar" alt="">
+        <img src="/assets/avatar.png" class="nav_avatar" alt="" />
       </div>
     </div>
 
@@ -25,10 +24,10 @@
       <div id="banner__contents">
         <h1 id="banner__title"></h1>
         <div id="banner__buttons">
-        <button id="banner__button">Play</button>
-        <button id="banner__button">My List</button>
-      </div>
-      <p id="banner__description"></p>
+          <button id="banner__button">Play</button>
+          <button id="banner__button">My List</button>
+        </div>
+        <p id="banner__description"></p>
       </div>
       <div id="banner__fadeBottom"></div>
     </header>
@@ -42,11 +41,10 @@
     </div>
 
     <script>
-      window.addEventListener("scroll",function(){
-
+      window.addEventListener("scroll", function () {
         var nav = document.querySelector(".nav");
         nav.classList.toggle("active", window.scrollY > 0);
-      }) 
+      });
     </script>
   </body>
 </html>
